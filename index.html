@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SURVEY FORM</title>
+
+  <style>
+    
+body {
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  resize: vertical;
+}
+
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+  </style>
+  
+</head>
+<body>
+  <div class="container">
+    <h2>SURVEY FORM</h2>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="major">Major:</label>
+        <select id="major" name="major" required>
+          <option value="">--Select Major--</option>
+          <option value="computer-science">Computer Science</option>
+          <option value="business">Business</option>
+          <option value="psychology">Psychology</option>
+          <option value="engineering">Engineering</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="grad-year">Expected Graduation Year:</label>
+        <input type="number" id="grad-year" name="grad-year" min="2023" max="2030" required>
+      </div>
+      <div class="form-group">
+        <label for="favorite-subject">Favorite Subject:</label>
+        <input type="text" id="favorite-subject" name="favorite-subject" required>
+      </div>
+      <div class="form-group">
+        <label for="least-favorite-subject">Least Favorite Subject:</label>
+        <input type="text" id="least-favorite-subject" name="least-favorite-subject" required>
+      </div>
+      <div class="form-group">
+        <label for="reason-for-choosing-major">Reason for Choosing Major:</label>
+        <textarea id="reason-for-choosing-major" name="reason-for-choosing-major" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="extracurricular-activities">Extracurricular Activities:</label>
+        <input type="text" id="extracurricular-activities" name="extracurricular-activities">
+      </div>
+      <div class="form-group">
+        <label for="hobbies">Hobbies:</label>
+        <input type="text" id="hobbies" name="hobbies">
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
